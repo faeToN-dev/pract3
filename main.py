@@ -9,7 +9,7 @@ def root():
 
 
 @app.post("/postdata")
-def postdata(number1 = Form(), number2=Form()):
+def postdata(number1 = Form(), act = Form(), number2=Form()):
     n1 = float(number1)
     n2 = float(number2)
 
