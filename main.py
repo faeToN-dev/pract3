@@ -9,15 +9,18 @@ def root():
 
 
 @app.post("/postdata")
-def postdata(number1 = Form(), act=Form(), number2=Form()):
+def postdata(number1 = Form(), number2=Form()):
+    n1 = float(number1)
+    n2 = float(number2)
+
     if act == 'summ':
-        result = number1 + number2
+        result = n1 + n2
     elif act == 'minus':
-        result = number1 - number2
+        result = n1 - n2
     elif act == 'mult':
-        result = number1 * number2
+        result = n1 * n2
     elif act == 'div':
-        result = number1 / number2
+        result = n1 / n2
     else:
         result = 'Operation impossible'
 
