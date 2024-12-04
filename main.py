@@ -24,4 +24,4 @@ def postdata(number12 = Form(), act = Form(), number2=Form()):
     else:
         result = 'Operation impossible'
 
-    return {"result": result}
+    return {"result": result
