@@ -9,7 +9,7 @@ def root():
 
 
 @app.post("/postdata")
-def postdata(number12 = Form(), act = Form(), number2=Form()):
+def postdata(number1 = Form(), act = Form(), number2=Form()):
     n1 = float(number1)
     n2 = float(number2)
 
@@ -24,4 +24,4 @@ def postdata(number12 = Form(), act = Form(), number2=Form()):
     else:
         result = 'Operation impossible'
 
-    return {"result": result
+    return {"result": result}
